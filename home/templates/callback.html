@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+
+{% block header %}    {% include 'header.html' %}   {% endblock header %}
+
+{% block carousel %}  {% include 'carousel.html' %} {% endblock carousel %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-10 col-sm-10 col-md-3 col-lg-3 col-xl-3"></div>
+      <div class="col-10 col-sm-10 col-md-6 col-lg-6 col-xl-6">
+        <h2 class="names">Dear {{profile.first_name}} {{profile.last_name}},</h2>
+        <h5>Your purchase of new {{trolley.title_g}}from our brand was sussecful.
+          wed look forword to doing more bussiness with you.
+        </h5>
+        <p class="text-center"> Thank you for your patronage.......</p>
+      </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+{% block footer %} {% include 'footer.html' %}    {% endblock footer %}

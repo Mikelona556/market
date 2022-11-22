@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% load humanize %}
+
+{% block title %} | Displaycart{% endblock title %}
+
+{% block header %}    {% include 'header.html' %}   {% endblock header %}
+
+{% block title %} | history{% endblock title %}
+
+{% block carousel %}  {% include 'carousel.html' %} {% endblock carousel %}
+
+{% block content %}
+
+  <div class="container">
+    <h2 class="text-center text-capitalize latest">{{profile.first_name}}'s Shop-cart</h2>
+    <div class="table-responsive table-box">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          {% if trolley %}
+            {% for items in trolley %}
+              <tr>
+                <td>{{items.title_g}}</td>
+                <td>{{items.quantity}}</td>
+                <td>{{items.price|floatformat:2|intcomma}}</td>
+                <td>{{items.amount|floatformat:2|intcomma}}</td>
+              </tr>
+            {% endfor %}
+          {% endif %}
+        </tbody>
+      </table>
+      <div class="table">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Total: {{total|floatformat:2|intcomma}}</td>
+            </tr>
+          </tbody>
+        <table>
+      </div>
+
+    </div>
+  </div>
+
+  {% endblock content %}
+
+  {% block footer %} {% include 'footer.html' %}    {% endblock footer %}
+  

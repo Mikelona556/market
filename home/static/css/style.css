@@ -1,0 +1,242 @@
+:root{
+    --body: white;
+    --nav-color: chocolate;
+    --chocolate-color: chocolate;
+    --silver-color: silver;
+    --blur-blue: #05668d;
+    --crimson-color: crimson;
+    --gold-color: gold;
+    --blur-color: rgb(49, 49 124);
+    --footer-color: black;
+    --footer-text: white;
+    --caddress: black;
+    --latest: black;
+    --white-color: white;
+
+}
+.body{
+    color: var(--latest);
+    background: var(--white-color);
+}
+.dark{
+    --body: black;
+    --nav-color: rgb(0, 0, 128);
+    --latest: white;
+    --chocolate-color: chocolate;
+    --silver-color: silver;
+    --blur-blue: #05668d;
+    --crimson-color: crimson;
+    --gold-color: gold;
+    --blur-color: rgb(49, 49 124);
+    --footer-color: black;
+    --footer-text: white;
+    --caddress: white;
+    --white-color: white;
+    --black-color: white;
+}
+.face{
+    font-size: 2rem;
+    color: var(--white-color);
+}
+.grab{
+    position: relative;
+}
+.show-hide{
+    position: relative;
+}
+.show{
+    position: absolute;
+    top: 4px;
+    right: 12px;
+}
+.show .fa-eye{
+    display: none;
+}
+.show .fa-eye-slash{
+    display: block;
+}
+.show .shower .fa-eye-slash{
+    display: none;
+}
+.show .shower .fa-eye{
+    display: block;
+}
+.navbar{
+    background: var(--nav-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: .6;
+}
+.navbar-brand{
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.nav-link{
+    color: white;
+}
+.navbar .navbar-brand{
+    color: var(--caddress);
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.dropdown-menu{
+    background: var(--nav-color);
+    opacity: .9;
+}
+.dropdown-item{
+    color: var(--white-color);
+}
+.dropdown-item:hover{
+    background: var(--gold-color);
+}
+.like{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--footer-color);
+    opacity: .4;
+
+}
+.carousel{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+}
+.carousel-indicators button{
+    border-radius: 50%;
+    width: 20px !important;
+    height: 20px !important;
+}
+.buton-fre{
+    color: var(--nav-color);
+    background: var(--white-color);
+}
+.buton-fre:hover{
+    color: var(--white-color);
+    background: var(--nav-color);
+    border: 1px solid var(--white-color);
+}
+.img{
+    height: 30vh;
+}
+
+
+.cform{
+    padding-top: 1rem;
+    padding-bottom: 1em;
+}
+.cform form{
+    width: 99%;
+    padding: 1rem;
+    background: var(--silver-color);
+    border-radius: 3rem;
+}
+.ccform{
+    background: var(--chocolate-color);
+    border-bottom: 10rem;
+    border-top: 10rem;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: .4rem;
+    border-radius: 3rem;
+}
+.cform form input[type="text"],
+.cform form input[type="email"]{
+    width: 100%;
+    box-shadow: none;
+    color: var(--nav-color);
+    outline: none;
+}
+.cform form textarea{
+    width: 100%;
+    height: min(6.5rem);
+    box-shadow: none;
+    outline: none;
+}
+.bale{
+    color: var(--blur-blue);
+    background: var(--white-color);
+}
+.bale:hover{
+    color: var(--white-color);
+    background: var(--blur-blue);
+    border: 1px solid var(--white-color);
+}
+.about{
+    background: url(../img/shoe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: fixed;
+    height: 40vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+}
+.about-txt{
+    color: var(--footer-color);
+    position: absolute;
+    background-color: var(--white-color);
+    opacity: .8;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 70%;
+    padding: .6rem;
+    margin-top: 1rem;
+}
+.fa-brands{
+    font-size: 1.7rem;
+    transition: ease 2s;
+}
+.fa-brands:hover{
+    color: red;
+    transform: translateY(-20px);
+    transition: ease 2s;
+}
+.footer{
+    color: var(--footer-text);
+    background: var(--footer-color);
+    width: 100%;
+    text-align: center;
+}
+.latest::after{
+    content: '';
+    display: block;
+    height: 1.3rem;
+    width: 4rem;
+    border-radius: 100%;
+    background: var(--crimson-color);
+    margin: auto;
+    transform: translateX(3px);
+}
+.latest::before{
+    content: '';
+    display: block;
+    height: .5rem;
+    width: 9rem;
+    border-radius: 100%;
+    background: var(--footer-color);
+    margin: auto;
+    transform: translateY(50px);
+}
+.fas{
+    color: lime;
+    font-size: 3rem;
+    background-color: black;
+    opacity: 0;
+    transition: ease 2s;
+}
+.fas:hover{
+    opacity: 5;
+    transition: ease 2s;
+}
+.fate{
+  border: none;  
+}
+body{
+    overflow-x: hidden;
+}
