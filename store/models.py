@@ -40,4 +40,20 @@ class Payment(models.Model):
 
     def __str__(self):
         return self.user.username
-    
+
+# class Delivery(models.Model):
+#     GOLD = 'on delivery'
+#     SILVER = 'Online Payment'
+#     BRONZE = 'With card'
+
+#     MODE = [
+#         (GOLD, 'on delivery'),
+#         (BRONZE, 'With card')
+#         (SILVER, 'Online Payment')
+#     ]
+
+#     profile = models.ForeignKey(Profile, on_delete=models.SET_NULL, null=True)
+#     product = models.ForeignKey(Product, on_delete=models.PROTECT)
+#     cart = models.ForeignKey(Cart, on_delete=models.PROTECT)
+#     Payment_mode = models.CharField(max_length=50, default='on delivery', choices=MODE)
+

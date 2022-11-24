@@ -307,7 +307,7 @@ def pay(request):
     if request.method == 'POST':
         api_key = 'sk_test_c954256f1310ef10e5081494b9dbfd15d7f696c1'
         curl = 'https://api.paystack.co/transaction/initialize'
-        cburl = 'http://54.173.247.14/callback/'
+        cburl = 'http://54.86.63.44/callback/'
         # cburl = 'http://127.0.0.1:8000/callback/'
         ref = str(uuid.uuid4())
         profile = Profile.objects.get(user__username = request.user.username)

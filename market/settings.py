@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$y=t&-xw7h^pq2s0ob%edi^v4-=hqpgquzo)mpf*4pc+b6xld2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['54.173.247.14', '*']
+ALLOWED_HOSTS = ['54.86.63.44', '*']
 
 
 # Application definition
@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
-    'userprofile',
-    'store',
+    'home.apps.HomeConfig',
+    'userprofile.apps.UserprofileConfig',
+    'store.apps.StoreConfig',
     'django.contrib.humanize',
 ]
 
@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'African/Lagos'
 
 USE_I18N = True
 

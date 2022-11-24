@@ -1,12 +1,10 @@
 {% extends 'base.html' %}
 
+{% block title %} | {{profile.first_name}}'s history{% endblock title %}
+
 {% load humanize %}
 
-{% block title %} | Displaycart{% endblock title %}
-
 {% block header %}    {% include 'header.html' %}   {% endblock header %}
-
-{% block title %} | history{% endblock title %}
 
 {% block carousel %}  {% include 'carousel.html' %} {% endblock carousel %}
 
@@ -55,7 +53,8 @@
 
     </div>
   </div>
-
+    
+  <li class="mb-3"><a href="{% url 'profile' %}" class="btn w-25 btn-info">Profile</a></li>
   {% endblock content %}
 
   {% block footer %} {% include 'footer.html' %}    {% endblock footer %}
